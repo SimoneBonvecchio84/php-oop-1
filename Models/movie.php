@@ -20,9 +20,10 @@ class Movie {
     }
 
     public function setAdults(string $parental_control){
-        if(in_array($parental_control, ["adults", "famiglia","maggiore di 16"])) {
-           $this-> parental_control = $parental_control;
+        if(!in_array($parental_control, ["adults", "famiglia","maggiore di 16"])) {
+            throw new Exception("Il valore inserito non è consentito, usa solo adults, famiglia, maggiore di 16");
         }     
+        $this-> parental_control =  $parental_control;
     }
 
     public function getAdults() {

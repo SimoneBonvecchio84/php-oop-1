@@ -10,7 +10,7 @@ $movie1->setAdults("maggiore di 16");
 var_dump($movie1);
 var_dump($movie2);
 
-var_dump($movie1->setAdults("ciao"))
+var_dump($movie1->setAdults("maggiore di 16"))
 
 ?>
 
