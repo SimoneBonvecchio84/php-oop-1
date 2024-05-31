@@ -24,4 +24,8 @@ class Movie {
            $this-> parental_control = $parental_control;
         }     
     }
+
+    public function getAdults() {
+        return $this-> parental_control;
+    }
 }
