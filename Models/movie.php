@@ -5,7 +5,7 @@
 
 */
 class Movie {
-    public  string $title;        // type hinting serve per definire il tipo di dato
+    public  string $title;             // type hinting serve per definire il tipo di dato
     public  string $country;
     public  string $duration;
     public  string $release_date;
