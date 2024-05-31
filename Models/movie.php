@@ -9,15 +9,19 @@ class Movie {
     public  string $country;
     public  string $duration;
     public  string $release_date;
-    private string $adults_only;  // Qualificatore di visibilita  
+    private string $parental_control;  // Qualificatore di visibilita  
 
     public function __construct(string $title, string $country, string $duration, string $release_date)
     {
-        $this-> $title        = $title;
-        $this-> $country      = $country;
-        $this-> $duration     = $duration; 
-        $this-> $release_date = $release_date;    
+        $this-> title        = $title;
+        $this-> country      = $country;
+        $this-> duration     = $duration; 
+        $this-> release_date = $release_date;    
     }
 
-    
+    public function setAdults(string $parental_control){
+        if(in_array($parental_control, ["adults", "famiglia","maggiore di 16"])) {
+           $this-> parental_control = $parental_control;
+        }     
+    }
 }
