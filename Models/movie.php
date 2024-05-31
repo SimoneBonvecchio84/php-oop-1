@@ -44,4 +44,15 @@ class Movie {
     public function getCast() {
         return $this-> cast;
     }
+
+    public function __toString()
+    {
+        return "Titolo:" .$this-> title .  "<br>". 
+               "Paese:" .$this-> country. "<br>".
+               "Durata:" .$this-> duration. " min". "<br>".
+               "Anno d'uscita:" .$this-> release_date. "<br>";
+               
+               
+    }   
+   
 }
